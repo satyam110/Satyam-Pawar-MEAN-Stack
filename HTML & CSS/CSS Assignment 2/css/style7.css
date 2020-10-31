@@ -1,0 +1,8 @@
+p{
+    display: inline;
+    font-size: 20px;
+    border: 2px solid red;
+    outline-width: 3px;
+    outline-style: dotted;
+    outline-color: rgb(80, 255, 80);
+}

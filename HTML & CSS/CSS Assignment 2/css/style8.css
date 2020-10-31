@@ -1,0 +1,18 @@
+body{
+    font-family: 'Nunito';
+}
+p{
+    background-color:#e0ffff;
+}
+
+p.first{
+    border: 7px solid black;
+}
+
+p.second{
+    border: 5px solid black;
+}
+
+p.third{
+    border: 2px solid black;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <div class="bg"></div>
+        <h2>General Feedback Form</h2>
+        <div class="form-body">
+            <form>
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" placeholder="Enter your first name" required>
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" placeholder="Enter your last name" required>
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="Enter your e-mail" required>
+                <label for="mobile">Enter Mobile Number</label>
+                <input type="text" name="mobile" id="mobile" placeholder="10 Digit mobile number" pattern="[0-9]{10}">
+                <label for="gender">Gender</label>
+                <ul>
+                    <li><input type="radio" name="gender" id="gender" value="male"><span>Male</span></li>
+                    <li><input type="radio" name="gender" id="gender" value="female"><span>Female</span></li>
+                </ul>
+                
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob">
+                <label for="vehicle">Which type of vehicle do you own ?</label>
+                <select name="vehicle" id="vehicle">
+                    <option value="bike">Bike</option>
+                    <option value="car">Car</option>
+                    <option value="none">None</option>
+                </select>
+                <label for="check">Select the languages you know</label>
+                <ul>
+                    <li><input type="checkbox" name="eng" id="eng" value="english"><span>English</span></li>
+                    <li><input type="checkbox" name="hin" id="hin" value="hindi"><span>Hindi</span></li>
+                    <li><input type="checkbox" name="mar" id="mar" value="marathi"><span>Marathi</span></li>
+                </ul>
+                <input type="button" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev Conference</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul class="heading">
+              <li><a href="">WebDev Conference</a></li>
+            </ul>
+            <ul class="menu">
+              <li><a href="#speakers" class="fb">Speakers</a></li>
+              <li><a href="#schedule" class="tw">Schedule</a></li>
+              <li><a href="#venue" class="tw">Venue</a></li>
+              <li><a href="#register" class="tw">Register</a></li>
+            </ul>
+          </nav>
+    </div>
+    <div class="sub-container">
+        <main class="conf-content">
+            <div class="conf-img">
+                <h1>The San Francisco React Conference</h1>
+                <p>Reactathon is a developer conference featuring 2 days of technical talks, networking, workshops & activities on all things React. Come hang out with and learn from some of the brightest minds and best speakers in the JS/React community.</p>
+                <img src="img/cal-icon.svg" alt="cal-icon"> <span> Dec 7 - 8, 2020</span>
+                <a href="#register">Register</a>
+                <img src="img/conf-logo.svg" alt="conf-logo" class="conf-logo">
+            </div>  
+        </main>
+        <header id="speakers"><h2>Speakers.</h2></header>
+        <section id="speaker">
+            <div>
+                <img src="img/speaker-guillermo.jpg" alt="speaker-guillermo" class="speaker-img">
+            </div>
+            <div class="speaker-details">
+                <h3>Guillermo Rauch</h3>
+                <p><em>Founder & CEO</em></p>
+                <p>ZEIT</p>
+            </div>
+            <div>
+                <img src="img/speaker-cassidy.jpg" alt="speaker-cassidy" class="speaker-img">
+            </div>
+            <div class="speaker-details">
+                <h3>Cassidy Williams</h3>
+                <p><em>Instructor & Developer</em></p>
+                <p>React Training</p>
+            </div>
+            <div>
+                <img src="img/speaker-kent.jpg" alt="speaker-kent" class="speaker-img">
+            </div>
+            <div class="speaker-details">
+                <h3>Kent C. Dodds</h3>
+                <p><em>Software Engineer & Teacher</em></p>
+                <p>KentCDodds.com</p>
+            </div>
+            <div>
+                <img src="img/speaker-wes.jpg" alt="speaker-wes" class="speaker-img">
+            </div>
+            <div class="speaker-details">
+                <h3>Wes Bos</h3>
+                <p><em>Engineer & Entrepreneur</em></p>
+                <p>WesBos.com</p>
+            </div>
+            <div>
+                <img src="img/speaker-ryan.jpg" alt="speaker-ryan" class="speaker-img">
+            </div>
+            <div class="speaker-details">
+                <h3>Ryan Florence</h3>
+                <p><em>Co-founder</em></p>
+                <p>React Training</p>
+            </div>
+            <div>
+                <img src="img/speaker-lydia.jpg" alt="speaker-lydia" class="speaker-img">
+            </div>
+            <div class="speaker-details">
+                <h3>Lydia Hallie</h3>
+                <p><em>Software Engineer</em></p>
+                <p>Independent</p>
+            </div>
+        </section>
+        
+        <header id="schedule"><h2>Schedule.</h2></header>
+        <section class="schedule">
+            <h2>Time</h2>
+            <h2>Activity</h2>
+            <div>9:00 am</div>
+            <div>Workshops</div>
+            <div>4.00 pm</div>
+            <div>Registration</div>
+            <div>6:00 pm </div>
+            <div>Keynote</div>
+            <div>7:00 pm</div>
+            <div>Talks</div>
+            <div>8:00 pm</div>
+            <div>Topic Tables</div>
+        </section>
+
+        <header id="venue"><h2>Venue.</h2></header>
+        <section class="venue">
+            <div class="venue-img">
+                <img src="img/venue.jpg" alt="venue">
+                <a href="https://www.google.com/maps/place/Hilton+San+Francisco+Union+Square/@37.7857936,-122.4127911,17z/data=!3m1!4b1!4m8!3m7!1s0x8085808fa0472279:0x49345c4565f1667a!5m2!4m1!1i2!8m2!3d37.7857894!4d-122.4105971">Get Directions</a>
+            </div>
+            <div class="venue-desc">
+                <h2>
+                    Venue
+                </h2>
+                <span>
+                    <img src="img/location-marker.svg" alt="location-marker">&nbsp; <em>Hilton San Francisco Union Square</em>
+                </span>
+                <p>
+                    Centrally-located in San Francisco’s Union Square, steps away from our subway and muni lines, the Hilton is one of the largest and most versatile event 
+                    spaces in the city. We’ve reserved an entire ballroom floor and lounge to comfortably seat 600 guests in the general sessions, with a separate dedicated
+                    space to seat 600 in dining rounds. Talks are presented with bright and crisp 6k projectors, and we have a dedicated lounge space for activities & mingling 
+                    with attendees and sponsors, along with separate rooms for breakout discussions and unconference sessions.
+                </p>
+            </div>
+        </section>
+
+        <header id="register"><h2>Register.</h2></header>
+        <section class="form">
+            <form id="reg-form">
+                <h2>Register for the Conference</h2>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <select name="numpass" id="numpass" aria-placeholder="No of Passes">
+                    <option value="default" selected>Number of Passes</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <a href="#">Register</a>
+            </form>
+        </section>
+
+        <footer>
+            <p> &copy; WebDev Conference</p>
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body{
+    background-color:#e0ffff ;
+    font-family: 'Nunito';  
+}
+
+a{
+    color:red;
+}
+a:visited{
+    color:green;
+}
+

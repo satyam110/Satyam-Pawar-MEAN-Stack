@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    background: #eee;
+    font-family:'Squada One', cursive;
+    height: auto;
+}
+
+  
+
+  .wrapper{
+      max-width: 1440px;
+      margin: auto;
+      box-shadow: 20px 0px 30px rgba(0,0,0,0.3),
+      -20px 0px 30px rgba(0,0,0,0.3);
+  }
+
+
+  #heading-text{
+    display: flex;
+    flex: 0 1 40vw;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+#heading-text h1{
+    font-size: 4rem;
+    color: #eee;
+}
+#heading-text h2{
+    font-size: 2rem;
+    color:#fff;
+    text-align: center;
+}
+#heading-text a{
+    display: block;
+    text-decoration: none;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 10px;
+    color: #eee;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #222;
+    align-self: center;
+}
+  #heading-img{
+    background: url("img/bg1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    flex: 0 1 60vw;
+    margin: 0;
+  }
+  
+  .head{
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+  }
+
+  .caption {
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  
+  #images{
+      display: flex;
+      flex-direction: column;
+  }
+
+
+  footer{
+      text-align: center;
+      padding: 2rem;
+      margin: auto;
+      background-color: #212;
+      color: #ddd;
+      font-size: 2rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    #heading {
+      display: flex;
+      height: 100%;
+    }
+  
+    #heading-text {
+      height: 50vh;
+    }
+  
+    #heading-img {
+      height: 50vh;
+    }
+
+    #heading-text h1{
+        font-size: 2.4rem;
+    }
+    #heading-text h2{
+        font-size: 1.3rem;
+    }
+    #heading-text a{
+        font-size: 1rem;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    #images img{
+        max-height: 300px;
+    }
+  }
+ 

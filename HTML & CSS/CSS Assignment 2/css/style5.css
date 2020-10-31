@@ -1,0 +1,10 @@
+body{
+    font-family: 'Nunito';
+}
+table, td, th{
+    border: 2px solid black;
+}
+
+#table1{
+    border-collapse: collapse;
+}

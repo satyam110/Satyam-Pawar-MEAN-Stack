@@ -1,0 +1,50 @@
+body{
+    font-family: 'Verdana';
+}
+
+.content{
+    max-width: 1240px;
+    height: auto;
+    background-color: #ddd;
+    margin: 0 auto;
+}
+
+header{
+    text-align: center;
+    padding: 15px;
+}
+
+section img{
+    position: relative;;
+    height: 15%;
+    width: 15%;
+    border: 1px solid #fff;
+    padding: 0.5%;
+    border-radius: 3%;
+    left: 40%;
+}
+
+article{
+    margin: 2% 10%;
+}
+article p{
+    font-size:1.1em;
+    text-align: justify;
+}
+
+article.about{
+    font-size: 0.9em;
+}
+article.about li{
+    text-align: justify;
+    margin: 8px 0;
+    line-height: 1.8;
+}
+
+article.about ul{
+    text-align: justify;
+}
+
+footer h4{
+    text-align: center;
+}

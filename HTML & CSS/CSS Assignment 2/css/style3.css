@@ -1,0 +1,14 @@
+body{
+    background-color:#e0ffff ;
+    font-family: 'Nunito';
+    margin:0;
+}
+
+.p1{
+   text-transform: uppercase; 
+}
+
+.p2{
+    text-transform: initial;
+}
+

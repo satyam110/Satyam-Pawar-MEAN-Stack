@@ -1,0 +1,17 @@
+body{
+    font-family: 'Nunito';
+    margin: 0;
+    padding: 0;
+}
+h1{
+    background-color:#6495ED ;
+    padding: 10px;
+    margin: 0;
+}
+div{
+    background-color:#B0C4DE ;
+}
+div p{
+    background-color: #E0FFFF ;
+    padding-bottom: 10px;
+}
