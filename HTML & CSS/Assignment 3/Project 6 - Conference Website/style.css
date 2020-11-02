@@ -98,7 +98,9 @@ header h2{
 .schedule{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 5px;
+    gap: 1px;
+    background: #eee;
+    padding: 15px;
 }
 
 .schedule h2,.schedule div{
@@ -107,11 +109,10 @@ header h2{
     align-items: center;
     justify-content: center;
     background-color: #ccc;
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding: 10px;
-    border: 1px solid #333;
-    margin: 1.5%;
-    border-radius: 5px;
+    border: 1px solid transparent;
+    margin: 0.5%;
 }
 
 .schedule div:hover,.schedule h2:hover{    
@@ -122,7 +123,8 @@ header h2{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
-    margin-bottom: 10%;
+    background: #eee;
+    padding: 25px;
 }
 
 .venue .venue-img{
@@ -174,12 +176,12 @@ header h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #555;
+    background: #ccc;
     padding: 5% 0;
     border-radius: 5px;
 }
 #reg-form h2{
-    color: #eee;
+    color: #666;
     margin-bottom: 1%;
 }
 #reg-form input,select{
@@ -187,8 +189,7 @@ header h2{
     height: 40px;
     font-weight: inherit;
     font-size: 1rem;
-    border: 2px solid #333;
-    border-radius: 6px;
+    border: 2px solid transparent;
     margin: 1%;
 }
 
@@ -219,6 +220,11 @@ footer{
 }
 
 @media screen and (max-width:600px){
+
+    header h2{
+        font-size: 1.5rem;
+        margin: 2%;
+    }
     .conf-img{
         min-height: 200px;
     }
@@ -249,5 +255,31 @@ footer{
     .venue-img img{
         height: 40%;
         width: 70%;
+    }
+    .venue-img a{
+        text-decoration: none;
+        text-align: center;
+        padding: 5px;
+        margin-top: 2%;
+    }
+    .venue-desc h2{
+        font-size: 1rem;
+    }
+    
+    .venue-desc p,.venue-desc span{
+        font-size: 0.5em;
+    }
+    .venue-desc h2,.venue-desc span,.venue-desc p{
+        margin: 1%;
+    }
+
+    #reg-form input,select{
+        width: 30%;
+        height: 20px;
+    }
+    #reg-form a{
+        text-align: center;
+        padding: 7px;
+        font-size: 0.6rem;
     }
 }

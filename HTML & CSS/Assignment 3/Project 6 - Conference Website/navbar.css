@@ -13,6 +13,7 @@ body{
 
 nav{
     background: #333;
+    
   }
   
   nav ul{
@@ -55,16 +56,28 @@ nav{
   }
   
   nav li{
-    flex: 1 1 0;
+    flex: 1 1 10px;
   }
   
   nav{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   
   .menu{
     margin: 0;
+  } 
+  
   }
-      
+
+  @media screen and (max-width : 560px){
+    nav ul.heading{
+      font-size: 1.2rem;
+    }
+  
+    nav ul{
+      list-style-type: none;
+      padding: 5px;
+    }
   }
