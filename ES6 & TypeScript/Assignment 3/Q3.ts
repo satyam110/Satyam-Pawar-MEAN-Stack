@@ -1,15 +1,34 @@
 interface printable {
-    print:string;
+    radius:number,
+    area:number
+    fname:string,
+    lname:string,
+    designation:string
   }
   
-  function printAll(circle: printable, employee:printable) {
-    console.log(circle.print);
-    console.log(employee.print);
-    
+  function print(...obj){
+      for(let o of obj){
+          return o;
+      }
+  }
+  function printAll(circle:object , employee:object) {
+    console.log(print(circle));
+    console.log(print(employee));
+    document.getElementById("obj1")?.innerHTML=`Circle Object : ${JSON.stringify(print(circle))}`;
+    document.getElementById("obj2")?.innerHTML=`Employee Object : ${JSON.stringify(print(employee))}`;
   }
   
-  function printObj(){
-  let circle = { radius:3 , print:"Print method from circle object"};
-  let employee = {name:"Steve" , print:"Print method from employee object"}
+  
+  
+function printObj(){
+        let circle:printable = { 
+            radius:3 , 
+            area:28.27 
+          };
+        let employee:printable =  {
+            fname:"Steve",
+            lname:"Holmer",
+            designation:"Software Engineer"
+          };
   printAll(circle,employee);
-  }
+}

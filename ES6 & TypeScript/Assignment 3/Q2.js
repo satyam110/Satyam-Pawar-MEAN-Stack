@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -47,3 +48,4 @@ function getTotalBal() {
     var current1 = new CurrentAccount(564, "ABC", 67758.40, 0.234);
     document.getElementById("total_bal").innerHTML = "Total balance in the bank is : " + Account.getbalance();
 }
+//# sourceMappingURL=Q2.js.map
