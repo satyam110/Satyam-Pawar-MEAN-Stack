@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+    <style>
+        *{
+            margin: 10px;
+        }
+        body{
+            background-color: #ddd;
+        }
+
+        #wrapper{
+            max-width: 1260px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <h2>Assignment 1 - Question 6</h2>
+
+    <h3>Draft a Ticket to Sysnet</h3>
+
+    <form>
+        <label for="model">Laptop model : </label>
+        <input type="text" name="model" id="model">
+        <br>
+        <label for="desk-no">Desk Number : </label>
+        <input type="text" name="desk-no" id="desk-no">
+        <br>
+        <label for="name">Your Name : </label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="desc">Description</label>
+        <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+        <br>
+        <input type="button" value="Submit Ticket" onclick="submitDetails()">
+    </form>
+
+    <h4 id="details"></h4>
+
+    <script src="Q6.js"></script>
+    </div>
+</body>
+</html>
