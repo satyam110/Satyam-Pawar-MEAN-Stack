@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+</head>
+<body>
+    <h2>Shopping List</h2>
+    <ul>
+        <% for(i=0; i<items.length; i++){%>
+
+            <li><%= items[i].item %></li>
+
+        <%}%>
+    </ul>
+    <br>
+    <br>
+    <h2>Add item to Shopping list</h2>
+    <form action="/items" method="POST">
+    <label for="id">ID : </label>
+    <input type="number" name="id" id="id">
+    <br>
+    <br>
+    <label for="name">Item Name :</label>
+    <input type="text" name="name" id="name">
+    <br>
+    <br>
+    <label for="price">Price :</label>
+    <input type="text" name="price" id="price">
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+    </form>
+    <br>
+    <br>
+   
+    
+</body>
+</html>

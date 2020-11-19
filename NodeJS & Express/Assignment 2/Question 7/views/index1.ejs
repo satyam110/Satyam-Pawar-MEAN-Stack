@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Find item by an id</h2>
+    <form method="get">
+    <input type="text" name="id" id="id">
+    <input type="submit" value="Get Item">
+    </form>
+
+    <table>
+        <tr>
+            <td>Item Name</td>
+            <td><%= items.item %></td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td><%= items.price %></td>
+        </tr>
+    </table>
+    <h2>Update items</h2>
+    <form method="put">
+        <input type="text" name="id" id="id" placeholder="Enter id"><br>
+        <input type="text" name="name" id="name" placeholder="Enter Item Name"><br>
+        <input type="text" name="price" id="price" placeholder="Enter Item Price"><br>
+        <input type="submit" value="Update Item">
+    </form>
+    <h2>Updated Items</h2>
+    <table>
+        <tr>
+            <td>Item Name</td>
+            <td><%= items.item %></td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td><%= items.price %></td>
+        </tr>
+    </table>
+</body>
+</html>

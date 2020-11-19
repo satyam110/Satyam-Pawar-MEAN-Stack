@@ -1,0 +1,17 @@
+{
+  "name": "assignment-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Q1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Satyam Pawar",
+  "license": "MIT",
+  "dependencies": {
+    "concat-stream": "^2.0.0",
+    "http": "0.0.1-security",
+    "moment": "^2.29.1",
+    "strftime": "^0.10.0"
+  }
+}
