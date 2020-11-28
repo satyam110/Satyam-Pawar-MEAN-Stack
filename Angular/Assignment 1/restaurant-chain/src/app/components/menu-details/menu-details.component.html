@@ -1,0 +1,17 @@
+<div class="container mt-4" *ngIf="menu">
+    <h3 class="mt-2"><span>ID: </span>{{menu[0].id}}</h3>
+    <input [(ngModel)]="menu[0].menuName"><br><br>
+    <button class="btn btn-secondary ml-2" (click)="back()">Go back</button>
+    <button class="btn btn-primary ml-2" (click)="save(menu[0])">Update</button>
+</div>
+<div class="mt-2">
+    <h3>Assign This Menu to Available Restaurants</h3>
+    <form class="ml-4">
+        <select #restaurant name="restaurant" >
+            <option value="default">Select the Restaurant</option>
+            <option *ngFor="let restaurant of restaurants" [value]='restaurant.name'>{{restaurant.name}}</option>
+        </select>
+        <br><br>
+        <button class="btn btn-primary" (click)="assign(restaurant.value,menu[0].menuName)">Update</button>
+    </form>
+</div>

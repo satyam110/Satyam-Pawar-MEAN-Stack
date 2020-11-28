@@ -1,0 +1,28 @@
+<h3> Restaurants </h3>
+ 
+<table class="table">
+
+    <tr *ngIf="isAdmin">
+        <td colspan="2">
+            <input #resName type="text" name="restaurant">
+        </td>
+        <td>
+            <button (click)="addRestaurant(resName.value)" class="btn btn-primary">Add</button>
+        </td>
+    </tr>
+    <tr *ngFor="let restaurant of restaurants">
+        <td>
+            <span>{{restaurant.id}}</span>
+        </td>
+        <td>
+            {{restaurant.name}}
+        </td>
+        <td *ngIf="isAdmin">
+            <a routerLink="/restaurants/{{restaurant.id}}" class="btn btn-warning">Edit</a>
+            <button (click)="deleteRestaurant(restaurant)" class="btn btn-danger ml-2">Delete</button>
+        </td>
+        <td *ngIf="isUser">
+            <a routerLink="/restaurant/{{restaurant.id}}" class="btn btn-warning">View Menu</a>
+        </td>
+    </tr>
+</table>

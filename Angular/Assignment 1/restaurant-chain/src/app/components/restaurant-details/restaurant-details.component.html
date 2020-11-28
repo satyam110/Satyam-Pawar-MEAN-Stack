@@ -1,0 +1,12 @@
+<div class="container" *ngIf="restaurant">
+    <h2><span>ID: </span>{{restaurant[0].id}}</h2>
+    <input [(ngModel)]="restaurant[0].name">
+
+    <h3>Restaurant Menu</h3>
+    <ul *ngFor="let menu of restaurant[0].menu">
+        <li>{{menu}}</li>
+    </ul>
+    
+    <button class="btn btn-secondary ml-2" (click)="back()">Go back</button>
+    <button class="btn btn-primary ml-2" (click)="save(restaurant[0])">Update</button>
+</div>

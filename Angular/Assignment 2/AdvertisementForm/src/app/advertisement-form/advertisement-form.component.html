@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>Advertisement Form</h1>
+    {{ advForm.value | json}}
+    <form #advForm="ngForm" novalidate (ngSubmit)="onSubmit(advForm)">
+        <div class="form-group">
+            
+            <label>Title</label>
+            <input type="text" #title="ngModel" name="title"  [class.is-invalid]="title.invalid && title.touched"  class="form-control" [(ngModel)]="advertisement.title" required>
+            <small class="text-danger" [class.d-none]="title.valid || title.untouched">Title is required</small>
+        </div>
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" #name="ngModel" [class.is-invalid]="name.invalid && name.touched" name="name" [(ngModel)]="advertisement.name" class="form-control" required>
+            <small class="text-danger" [class.d-none]="name.valid || name.untouched">Name is required</small>
+        </div>
+        <div class="form-group">
+            <select class="custom-select" name="category" (blur)="validateTopic(topic.value)" (change)="validateTopic(topic.value)" #topic="ngModel"
+            [class.is-invalid]="topicHasError && topic.touched" [(ngModel)]="advertisement.category">
+                <option value="default">Select Advertisement Category</option>
+                <option *ngFor="let category of categories">{{ category }}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <textarea [(ngModel)]="advertisement.desc" name="description" class="form-control "rows="3"></textarea>
+        </div>
+        <button [disabled]="advForm.form.invalid || topicHasError" class="btn btn-primary">Post Advertisement</button>
+    </form>
+</div>
+

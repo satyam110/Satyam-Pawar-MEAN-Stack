@@ -1,0 +1,15 @@
+<h1>Restaurant Dashboard</h1>
+<button class="btn btn-secondary ml-3" (click)="admin()">Admin</button>
+<button class="btn btn-secondary ml-3" (click)="user()" routerLink="/user">User</button>
+<button class="btn btn-secondary ml-3" (click)="owner()">Owner</button>
+<nav *ngIf="isAdmin">
+  <a class="btn btn-large btn-secondary ml-2 text-white" routerLink="/menu">Menu</a>
+  <a class="btn btn-large btn-secondary ml-2 text-white" routerLink="/restaurants">Restaurants</a>
+</nav>
+<nav *ngIf="isUser">
+  <a class="btn btn-large btn-warning text-white" routerLink="/restaurants">Restaurants</a>
+</nav>
+<nav *ngIf="isOwner">
+  <a class="btn btn-large btn-warning text-white" routerLink="/restaurants">Restaurants</a>
+</nav>
+<router-outlet></router-outlet>

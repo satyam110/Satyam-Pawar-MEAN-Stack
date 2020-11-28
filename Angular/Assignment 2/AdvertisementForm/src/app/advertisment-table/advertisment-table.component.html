@@ -1,0 +1,23 @@
+<div class="container mt-5">
+    <h1>Advertisment Table </h1>
+    <input type="text" [(ngModel)] = "query">
+    <table class="table mt-4">
+        <tr>
+            <th>Title</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let myAd of myAdsList | search:query">
+            <td>{{myAd.title}}</td>
+            <td>{{myAd.name}}</td>
+            <td>{{myAd.category}}</td>
+            <td>{{myAd.description}}</td>
+            <td>
+                <a  class="btn btn-warning" routerLink="edit/{{myAd.title}}">Edit</a>
+                <button class="btn btn-danger ml-2" (click)="delete(myAd)">Delete</button>
+            </td>
+        </tr>
+    </table>
+</div>

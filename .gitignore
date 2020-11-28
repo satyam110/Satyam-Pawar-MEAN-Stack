@@ -5,7 +5,8 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
-
+.gitignore
+.gitkeep
 ### Node ###
 # Logs
 logs

@@ -1,0 +1,10 @@
+<div class="container">
+    <h2><span>ID: </span>{{restaurant[0].id}}</h2>
+    
+    <h2>Restaurant Name : {{restaurant[0].name}}</h2>
+    
+    <h3>Restaurant Menu</h3>
+    <ul *ngFor ="let menu of restaurant[0].menu">
+        <li><a (click)="order(menu)">Order => {{menu}}</a></li>
+    </ul>
+</div>
