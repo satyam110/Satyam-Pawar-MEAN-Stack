@@ -1,0 +1,83 @@
+<!-- <div *ngIf="user.role==='farmer'">
+  Farmer Profile
+</div>
+
+<div *ngIf="user.role==='dealer'">
+  dealer Profile
+</div> -->
+<!-- {{user | json}} -->
+<div class="d-flex" id="wrapper">
+
+  <!-- Sidebar -->
+  <div class="bg-light border-right" id="sidebar-wrapper">
+    <div class="sidebar-heading">Welcome, {{email}}</div>
+    <div class="list-group list-group-flush">
+      <a  routerLink="profile"  class="list-group-item list-group-item-action bg-light">Profile</a>
+      <span *ngIf="role === 'farmer'"><a  routerLink="addCrop"  class="list-group-item list-group-item-action bg-light">Add Crop</a></span>
+      <span *ngIf="role === 'farmer'"><a  routerLink="viewCrop"  class="list-group-item list-group-item-action bg-light">View Added Crops</a></span>
+      <span *ngIf="role === 'dealer'"><a routerLink="subscribedCrops"  class="list-group-item list-group-item-action bg-light">Subscribed Crops</a></span>
+      <span *ngIf="role === 'dealer'"><a  routerLink="paymentDetails"  class="list-group-item list-group-item-action bg-light">Payment Details</a></span>
+      <span *ngIf="role === 'admin'"><a  routerLink="admin-farmer-management"  class="list-group-item list-group-item-action bg-light">Farmers Management</a></span>
+      <span *ngIf="role === 'admin'"><a  routerLink="admin-dealer-management"  class="list-group-item list-group-item-action bg-light">Dealers Management</a></span>
+      <span *ngIf="role === 'admin'"><a  routerLink="admin-crop-management"  class="list-group-item list-group-item-action bg-light">Crops Management</a></span>
+      <span *ngIf="role === 'admin'"> <a routerLink="admin-orders"  class="list-group-item list-group-item-action bg-light">View Orders</a> </span>
+      <span *ngIf="role === 'farmer' || role === 'dealer'"> <a routerLink="bankDetails"  class="list-group-item list-group-item-action bg-light">Bank Details</a> </span>
+      <span *ngIf="role === 'farmer' || role === 'dealer'"> <a routerLink="invoices"  class="list-group-item list-group-item-action bg-light">View Invoices</a> </span>
+
+      <!--
+        (click)="setProfileView()"
+        (click)="setAddCropView()"
+        (click)="setViewCropView()"
+        (click)="setSubCropView()"
+        (click)="setPayView()"
+        (click)="setFarmerView()"
+        (click)="setDealerView()"
+        (click)="setCropMgtView()"
+        (click)="setAdminOrdersView()"
+        (click)="setBankDetailsView()"
+        (click)="setInvoicesView()"
+      -->
+    </div>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+
+    <button class="btn btn-light" onclick="toggle()" id="menu-toggle"><i class="fa fa-bars"></i></button>
+      <!-- <app-profile *ngIf="showProfile"></app-profile>
+      <app-add-crop *ngIf="showAddCrop"></app-add-crop>
+      <app-view-crop *ngIf="showViewCrop"></app-view-crop>
+      <app-bank-details *ngIf="showBankDetails"></app-bank-details>
+      <app-view-invoices *ngIf="showInvoices"></app-view-invoices>
+      <app-crops-subscribed *ngIf="showSubCrop"></app-crops-subscribed>
+      <app-payment-details *ngIf="showPayment"></app-payment-details>
+      <app-admin-farmers *ngIf="showFarmerMgt"></app-admin-farmers>
+      <app-admin-dealers *ngIf="showDealerMgt"></app-admin-dealers>
+      <app-admin-crops *ngIf="showCropMgt"></app-admin-crops>
+      <app-admin-orders *ngIf="showAdminOrders"></app-admin-orders> -->
+      <router-outlet></router-outlet>
+  </div>
+
+  </div>
+  <!-- /#page-content-wrapper -->
+
+
+<!-- <div class="container">
+  <div class="row mt-5">
+    <div class="col-md-12 mb-3">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">{{user.name}}</h5>
+          <p class="card-text">{{user.email}}</p>
+          <p class="card-text">{{user.phone}}</p>
+          <p class="card-text">Description : {{user.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+
